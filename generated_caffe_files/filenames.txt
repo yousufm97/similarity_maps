@@ -1,0 +1,8 @@
+conv1.txt
+conv2.txt
+conv3.txt
+pool1.txt
+pool2.txt
+pool3.txt
+fc1.txt
+fc2.txt
