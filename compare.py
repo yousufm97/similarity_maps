@@ -94,7 +94,7 @@ def compare(workbook,caffetxt, cpptxt,caffeSheetName=None,cppSheetName=None,erro
 
 
 
-'''                 HAS NOT BEEN TESTED
+'''  
     Description: 
         compares all files in two directories assuming filenames for each layer are stored in there respective locations in the same order and creates an excel sheet showcasing the similarities
     Inputs:
