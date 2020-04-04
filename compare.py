@@ -442,13 +442,13 @@ if __name__ == '__main__':
     #       SECOND PARAMETER IS NAME/LOCATION OF NEW FILE THAT WILL BE CREATED
     #       THIRD PARAMETER IS NUMBER OF COLUMNS TO HAVE
     '''                 #format
-    convert_to_2d('provided_caffe_files/cifar10_conv1.txt','caffe_files/conv1.txt',31)
-    convert_to_2d('provided_caffe_files/cifar10_conv2.txt','caffe_files/conv2.txt',31)
-    convert_to_2d('provided_caffe_files/cifar10_conv3.txt','caffe_files/conv3.txt',31)
-    convert_to_2d('provided_caffe_files/cifar10_pool1.txt','caffe_files/pool1.txt',31)
-    convert_to_2d('provided_caffe_files/cifar10_pool2.txt','caffe_files/pool2.txt',31)
-    convert_to_2d('provided_caffe_files/cifar10_pool3.txt','caffe_files/pool3.txt',31)
-    convert_to_2d('provided_caffe_files/cifar10_ip1.txt','caffe_files/fc1.txt',1)
+    convert_to_2d('provided_caffe_files/cifar10_conv1.txt','generated_caffe_files/conv1.txt',31)
+    convert_to_2d('provided_caffe_files/cifar10_conv2.txt','generated_caffe_files/conv2.txt',31)
+    convert_to_2d('provided_caffe_files/cifar10_conv3.txt','generated_caffe_files/conv3.txt',31)
+    convert_to_2d('provided_caffe_files/cifar10_pool1.txt','generated_caffe_files/pool1.txt',31)
+    convert_to_2d('provided_caffe_files/cifar10_pool2.txt','generated_caffe_files/pool2.txt',31)
+    convert_to_2d('provided_caffe_files/cifar10_pool3.txt','generated_caffe_files/pool3.txt',31)
+    convert_to_2d('provided_caffe_files/cifar10_ip1.txt','generated_caffe_files/fc1.txt',1)
     #'''
 
 
@@ -462,21 +462,21 @@ if __name__ == '__main__':
     pool_1_list = []
     pool_2_list = []
     for i in range(1,6):
-        conv_1_list.append( 'Cifar10_Blob_Vivado/conv1out' + str(i) + '.txt' )
+        conv_1_list.append( 'provided_vivado_files/conv1out' + str(i) + '.txt' )
     for i in range(1,11):
-        conv_2_list.append( 'Cifar10_Blob_Vivado/conv2out' + str(i) + '.txt' )
+        conv_2_list.append( 'provided_vivado_files/conv2out' + str(i) + '.txt' )
     for i in range(1,16):
-        conv_3_list.append( 'Cifar10_Blob_Vivado/conv3out' + str(i) + '.txt' )
+        conv_3_list.append( 'provided_vivado_files/conv3out' + str(i) + '.txt' )
     for i in range(1,6):
-        pool_1_list.append( 'Cifar10_Blob_Vivado/pool1out' + str(i) + '.txt' )
+        pool_1_list.append( 'provided_vivado_files/pool1out' + str(i) + '.txt' )
     for i in range(1,11):
-        pool_2_list.append( 'Cifar10_Blob_Vivado/pool2out' + str(i) + '.txt' )
+        pool_2_list.append( 'provided_vivado_files/pool2out' + str(i) + '.txt' )
 
-    mergeFiles(conv_1_list,'vivado_files/conv1.txt')
-    mergeFiles(conv_2_list,'vivado_files/conv2.txt')
-    mergeFiles(conv_3_list,'vivado_files/conv3.txt')
-    mergeFiles(pool_1_list,'vivado_files/pool1.txt')
-    mergeFiles(pool_2_list,'vivado_files/pool2.txt')
+    mergeFiles(conv_1_list,'generated_vivado_files/conv1.txt')
+    mergeFiles(conv_2_list,'generated_vivado_files/conv2.txt')
+    mergeFiles(conv_3_list,'generated_vivado_files/conv3.txt')
+    mergeFiles(pool_1_list,'generated_vivado_files/pool1.txt')
+    mergeFiles(pool_2_list,'generated_vivado_files/pool2.txt')
     #'''
 
 
